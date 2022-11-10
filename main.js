@@ -5,6 +5,7 @@ let remComplete = document.querySelector('#remComplete')
 let remAll = document.querySelector('#removeAll')
 let img = document.querySelector('.img')
 
+//Add button with line-through
 addButton.addEventListener('click', function(event){
 event.preventDefault();
     console.log('event test')
@@ -42,8 +43,8 @@ remAll.addEventListener('click',function(event){
     olItems[i].remove();
     }
 })
-
-// //MouseOver effect
-// img.addEventListener('mouseOver', function(){
-// img.src.replace(src='https://imgs.search.brave.com/IanaBmLHWlPmKPS3jmajkrc0n8x8MtPcFTOYDqfsQ_E/rs:fit:449:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5B/ZTJVUW03WFpVdWxh/WTJ0bHZla0xBSGFI/MCZwaWQ9QXBp', width = '300px')
-// })
+//outset to inset
+addButton.addEventListener('mousedown', function(event){
+    let addButton = event.target;
+    addButton.style.border-style === 'inlet'
+})
