@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="app">
+    <div id="header">
+    <h1>ToDo (DOM) List</h1>
+    </div>
+
+    <div class="title">
+        <h5>Add items to your list</h5>
+       </div>
+
+    <div>
+    <form id="toDoForm">
+        <p>Add items to your list</p>
+        <input id="toDoInput" type="text" placeholder="Enter list items here">
+    </form>
+    </div>
+        <div id="buttons">
+            <input type="submit" id="addButton" value="Add"/>
+            <input type="submit" id="remComplete" value="Remove completed item"/>
+            <input type="submit" id="removeAll" value = "Remove all"/>
+        </div>
+    <div id="listItems">
+        <ol id="olItems">
+        </ol>
+    </div>
+    </div>
+    <div class="img">
+        <img id="getThingsDone" src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX13387462.jpg" width="300px">
+    </div>
+    <script src='main.js'></script>
+</body>
+</html>
